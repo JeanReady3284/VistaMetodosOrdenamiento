@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VistaMetodosDeOrdenamientoController">
+   <children>
+      <BarChart fx:id="areaBurbuja" layoutX="40.0" layoutY="118.0" prefHeight="209.0" prefWidth="300.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="areaSeleccion" layoutX="377.0" layoutY="118.0" prefHeight="209.0" prefWidth="300.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="areaInsercion" layoutX="694.0" layoutY="118.0" prefHeight="209.0" prefWidth="300.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="areaSacudida" layoutX="40.0" layoutY="377.0" prefHeight="209.0" prefWidth="300.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="areaQuickSortR" layoutX="377.0" layoutY="377.0" prefHeight="209.0" prefWidth="300.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="areaQuickSortI" layoutX="694.0" layoutY="377.0" prefHeight="209.0" prefWidth="300.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="409.0" layoutY="14.0" text="Metodos de ordenamiento">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnIniciar" layoutX="166.0" layoutY="50.0" mnemonicParsing="false" onAction="#evento" text="Iniciar" />
+      <Button fx:id="btnAleatorios" layoutX="492.0" layoutY="50.0" mnemonicParsing="false" onAction="#eventoAleatorios" text="Aleatorios" />
+      <Button fx:id="btnSalir" layoutX="805.0" layoutY="50.0" mnemonicParsing="false" onAction="#eventoSalir" text="Salir" />
+   </children>
+</Pane>
